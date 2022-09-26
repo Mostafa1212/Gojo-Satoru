@@ -3484,9 +3484,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 	case 'الاوامر': case 'اوامر': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                     title: `مرحبا ${pushname}`,
-                    description: `الرجاء اختيار القائمة\n\n`,
-                    buttonText: "القائمة",
+                     title: `
+┌─❖
+│「 Hi 👋 」
+└┬❖ 「 ${pushname} 」
+ │✑  Daijobka sempai?😄
+ └───────────────┈ ⳹`,
+                    description: `「 اختر قائمة من فضلك 」◣`,
+                    buttonText: "「 القائمة 」◣",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
