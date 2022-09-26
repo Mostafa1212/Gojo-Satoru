@@ -3485,11 +3485,18 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                      title: `
-┌─❖
-│「 Hi 👋 」
+┌─❖ مـرحبـاً 🤗 」
 └┬❖ 「 ${pushname} 」
- │✑  Daijobka sempai?😄
- └───────────────┈ ⳹`,
+││✑「مـعـك بـوت غـوجـو 👋🏻」◣
+││✑「مـن مـمـلـكـة كاستل 🤗」◣
+│└───────────────┈ ⳹
+ 「 مـعـلـومـات عـن الـبـوت 」
+│✙「 اسـم الـبـوت 」◣ : 「 غوجو ✨🤞🏻 」◣
+│✙「 رقـم الـمـالـك 」◣ : ${global.owner}
+│✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
+└┬──────────────┈ ⳹
+   │✑  「 استمتع مع البوت 🤗 」◣
+   └───────────────┈ ⳹`,
                     description: `「 اختر قائمة من فضلك 」◣`,
                     buttonText: "「 القائمة 」◣",
                     footerText: `${global.footer}`,
@@ -3588,7 +3595,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "المملكة",
 								"rows": [
 									{
-										"title": "قائمة استمارات مملكة غولد",
+										"title": "قائمة استمارات مملكة كاستل",
 										"description": ".17.",
 										"rowId": `${prefix}anon`
 									}
@@ -3598,7 +3605,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "نبذة",
 								"rows": [
 									{
-										"title": "تاريخ مملكة غولد",
+										"title": "تاريخ مملكة كاستل",
 										"description": ".18.",
 										"rowId": `${prefix}tqtt`
 									}
@@ -4145,7 +4152,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'.18.')
-await GojoMdNx.send5ButImg(from, `` + '' + ' ', `تحت الصيانة`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+await GojoMdNx.send5ButImg(from, `` + '' + ' ', `تحت الصيانة ⚙️`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
