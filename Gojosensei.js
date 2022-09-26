@@ -3611,9 +3611,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'التسجhgjيل': case 'التسجيل': {
-                reply(`「 الفرع الخاص ل التعليم على البوت 」◣
+                reply(`「 ل التعليم على البوت تواصل مع المشرف 」◣
 
-「 _https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3_ 」◣
+「 _https://Wa.Me/+96899659481_ 」◣
 
 「 نرحب بالجميع. 」◣`)
             }
